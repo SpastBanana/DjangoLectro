@@ -1,2 +1,0 @@
-# DjangoLectro
-DataLectro Website
