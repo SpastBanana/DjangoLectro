@@ -1,0 +1,29 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/mailSuccess.css' %}">
+</head>
+<main>
+    <div class="successMSGBox">
+        <div class="confirm">
+            <h1>Gelukt!</h1>
+            <p>Uw bericht is met success verzonden. U ontvangt nog een bevestiging van ons in uw mailbox.</p>
+        </div>
+        <div class="information">
+            <h2>Wij hebben de volgende gegevens van u ontvangen:</h2>
+            <div class="informationBlock">
+                <p>Naam:      {{ name }}</p>
+                <p>E-mail:    {{ mail }}</p>
+                <p>Onderwerp: {{ sub }}</p>
+            </div>
+            <div class="informationMSG">
+                <h3>Bericht:</h3>
+                <p>{{ msg }}</p>
+            </div>
+        </div>
+        <form class="nextButtons" action="" method="POST">
+            <a href="/contact" class="backToPage">Terug naar "CONTACT"</a>
+            <a href="/" class="backToHome">Terug naar "HOME"</a>
+            <button type="submit" name="invalidInfo" >Mijn gegevens kloppen niet</button>
+        </form>
+    </div>
+</main>

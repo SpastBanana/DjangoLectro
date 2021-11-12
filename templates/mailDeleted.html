@@ -1,0 +1,18 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/mailDeleted.css' %}">
+</head>
+<main>
+    <div class="successMSGBox">
+        <div class="confirm">
+            <h1>Verwijderd</h1>
+        </div>
+        <div class="information">
+            <h2>Het bericht is onverstuurd en verwijderd...</h2>
+        </div>
+        <div class="nextButtons" action="" method="POST">
+            <a href="/contact" class="backToPage">Terug naar "CONTACT"</a>
+            <a href="/" class="backToHome">Terug naar "HOME"</a>
+        </div>
+    </div>
+</main>

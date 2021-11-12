@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DataLectro</title>
+    <link rel="stylesheet" href="{% static 'CSS/index.css' %}">
+    <script src="https://kit.fontawesome.com/119ccea603.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-PC">
+            <div class="topTitle">
+                <a href="/" class="logo">
+                    <img src="{% static 'IMG/index/logoNew.png' %}">
+                </a>
+                <h1 class="phoneHead">06-46772219</h1>
+            </div>
+            <div class="navList">
+                <a href="/"
+                   {% if request.get_full_path == "/" %}
+                        class="currentPage"
+                   {% else %}
+                        class="navLink"
+                   {% endif %}
+                >Home</a>
+                <a href="/over-datalectro"
+                   {% if request.get_full_path == "/over-datalectro/" %}
+                        class="currentPage"
+                   {% else %}
+                        class="navLink"
+                   {% endif %}
+                >Over DataLectro</a>
+                <a href="/portfolio"
+                   {% if request.get_full_path == "/portfolio/" %}
+                        class="currentPage"
+                   {% else %}
+                        class="navLink"
+                   {% endif %}
+                >Portfolio</a>
+                <a href="/blog"
+                   {% if request.get_full_path == "/blog/" %}
+                        class="currentPage"
+                   {% else %}
+                        class="navLink"
+                   {% endif %}
+                >Blog</a>
+                <a href="/het-team"
+                   {% if request.get_full_path == "/het-team/" %}
+                        class="currentPage"
+                   {% else %}
+                        class="navLink"
+                   {% endif %}
+                >Het team</a>
+                <a href="/contact"
+                   {% if request.get_full_path == "/contact/" %}
+                        class="currentPage"
+                   {% else %}
+                        class="navLink"
+                   {% endif %}
+                >Contact</a>
+            </div>
+        </div>
+    </header>
+    {% include page %}
+    <footer>
+        <div class="footBox">
+            <div class="footBar">
+                <h1>Service & contact</h1>
+                <div class="socialIcons">
+                    <a href="https://www.instagram.com/datalectro/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/DataLectro-103333941643395" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="workLogos">
+                <img src="{% static 'IMG/index/RaspberryPi.jpg' %}">
+                <img src="{% static 'IMG/index/Raspbian.jpg' %}">
+                <img src="{% static 'IMG/index/Ubuntu.jpg' %}">
+                <img src="{% static 'IMG/index/Kali.jpg' %}">
+                <img src="{% static 'IMG/index/Linux.jpg' %}">
+                <img src="{% static 'IMG/index/Windows.jpg' %}">
+                <img src="{% static 'IMG/index/MikroTik.jpg' %}">
+                <img src="{% static 'IMG/index/Netgear.jpg' %}">
+                <img src="{% static 'IMG/index/Ubiquiti.jpg' %}">
+            </div>
+            <div class="footContext">
+                <div class="card1">
+                    <img src="{% static "IMG/index/logoNew.png" %}">
+                    <div class="copyRight">
+                        <h2>&copy; 2019-{{ copyYear }}</h2>
+                        <a href="https://datalectro.nl">www.datalectro.nl</a>
+                    </div>
+                </div>
+                <div class="card2">
+                    <form class="contact-form" action="" method="POST">
+                        {% csrf_token %}
+                        <h2 class="formFootTitle">Bel mij terug</h2>
+                        <div class="formFootBox">
+                            <input autocomplete="off" type="text" name="name" placeholder="Naam" required>
+                            <input autocomplete="off" type="text" name="phone" placeholder="Uw telefoon nummer" required />
+                        </div>
+                        <button type="submit" name="submitPhone">Verzend!</button>
+                    </form>
+                </div>
+                <div class="card3">
+                    <div class="con1">
+                        <h1>E-mail</h1>
+                        <p>info@datalectro.nl</p>
+                    </div>
+                    <div class="con2">
+                        <h1>Telefoon</h1>
+                        <p>06-46772219</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

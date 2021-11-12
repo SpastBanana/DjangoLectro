@@ -1,0 +1,115 @@
+main {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactBox {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact1 {
+    width: 28%;
+    height: 80%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: solid 2px #d6a345;
+}
+
+.title {
+    font-size: 180%;
+    font-weight: bolder;
+    color: #3860A8;
+    text-align: center;
+}
+
+.context {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+.context h3 {
+    font-size: 130%;
+    font-weight: 500;
+    color: #3860A8;
+}
+
+.context p {
+    font-size: 110%;
+}
+
+.contact2 {
+    font-size: 300%;
+    font-weight: bolder;
+    color: #3860A8;
+}
+
+.contact3 {
+    width: 28%;
+    height: 80%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #d6a345;
+}
+
+.mailForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.formBox {
+    height: 66%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formBox input {
+    height: 10%;
+    width: 80%;
+    outline: none;
+    margin-bottom: 2%;
+    padding: 5px;
+    font-weight: 700;
+    border: solid 1.5px #444444;
+}
+
+.formBox textarea {
+    height: 50%;
+    width: 80%;
+    outline: none;
+    padding: 5px;
+    resize: none;
+    font-weight: 700;
+    border: solid 1.5px #444444;
+}
+
+.mailForm button {
+    height: 12%;
+    width: 50%;
+    border: none;
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    background: #6bc74a;
+    cursor: pointer;
+}
