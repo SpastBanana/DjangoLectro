@@ -15,8 +15,8 @@ main {
 }
 
 .cardContain {
-    width: 250px;
-    height: 100%;
+    width: 16vw;
+    height: 22vw;
     perspective: 1000px;
 }
 
@@ -64,7 +64,7 @@ main {
 }
 
 .cardBack {
-    background: #517fa4;
+    background: #3860A8;
     transform: rotateY(180deg);
     position: absolute;
     height: 100%;
@@ -75,7 +75,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    font-size: 150%;
+    font-size: 125%;
     text-align: left;
 }
 
@@ -86,7 +86,7 @@ main {
 .cardBack p {
     margin: 5%;
     text-align: left;
-    font-size: 85%;
+    font-size: 90%;
 }
 
 .textBox {
@@ -97,32 +97,29 @@ main {
     justify-content: space-between;
 }
 
-.introText,
 .solarText {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 40%;
+    height: 40%;
+    width: 84%;
     padding: 3%;
     border: solid 2px #d6a345;
-    text-align: center;
+    text-align: justify;
 }
 
-.introText h1,
 .solarText h1 {
     font-size: 150%;
     font-weight: bolder;
     color: #3860A8;
 }
 
-.introText p,
 .solarText p {
     font-size: 100%;
-    font-weight: 600;
+    font-weight: 500;
+    width: 80%;
 }
 
-.introBlock,
 .solarBlock {
     height: 100%;
     width: 100%;
