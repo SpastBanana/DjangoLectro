@@ -21,6 +21,7 @@
             </div>
         </div>
         <form class="nextButtons" action="" method="POST">
+            {% csrf_token %}
             <a href="/contact" class="backToPage">Terug naar "CONTACT"</a>
             <a href="/" class="backToHome">Terug naar "HOME"</a>
             <button type="submit" name="invalidInfo" >Mijn gegevens kloppen niet</button>

@@ -1,0 +1,79 @@
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.successMSGBox {
+    height: 65%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 35px;
+    border: solid 3px #ef2222;
+    padding: 3%;
+}
+
+.confirm {
+    height: 15%;
+    width: 100%;
+    margin-top: -2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.confirm h1 {
+    color: #3860A8;
+    font-size: 220%;
+    font-weight: bolder;
+}
+
+.confirm p {
+    font-weight: 600;
+    font-size: 115%;
+}
+
+.information {
+    height: 75%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+}
+
+.information h2 {
+    margin-top: -8%;
+    width: 100%;
+    text-align: center;
+}
+
+.nextButtons {
+    height: 10%;
+    width: 100%;
+    margin-bottom: -2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nextButtons a {
+    height: 100%;
+    width: 30%;
+    background: #3860A8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+    border-radius: 10px;
+}

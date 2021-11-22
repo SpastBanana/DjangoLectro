@@ -1,0 +1,25 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/solar.css' %}">
+</head>
+<main>
+    <div class="solarBanner">
+        <h2>DataLectro introduceert: Energie van de zon!</h2>
+        <img src="{% static 'IMG/solar/Solar-Banner.jpg' %}">
+    </div>
+    <div class="textBox">
+        <h2>haldj</h2>
+        <p>lkajsd</p>
+    </div>
+    <form class="mailForm" action="" method="POST">
+        {% csrf_token %}
+        <div class="solarFormTitle">Aanvraagformulier voor zonnepanelen</div>
+        <div class="solarForm">
+            <input autocomplete="off" type="text" name="name" placeholder="Naam" required>
+            <input autocomplete="off" type="email" name="mail" placeholder="E-mail" required />
+            <input autocomplete="off" type="text" name="phone" placeholder="Telefoon" required>
+            <textarea name="message" placeholder="Opmerkingen"></textarea>
+        </div>
+        <button type="submit" name="submitMail">Verzend!</button>
+    </form>
+</main>

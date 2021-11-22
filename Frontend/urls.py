@@ -9,5 +9,8 @@ urlpatterns = [
     path('blog/', views.blogView, name="blog"),
     path('het-team/', views.teamView, name="het-team"),
     path('contact/', views.contactView, name="contact"),
-    path('solar-project/', views.solarView, name="solar"),
+    path('elektra/', views.contactView, name="elektra"),
+    path('engineering/', views.contactView, name="engineering"),
+    path('ict-en-iot/', views.contactView, name="ict"),
+    path('solar/', views.solarView, name="solar"),
 ]

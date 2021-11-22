@@ -21,13 +21,13 @@
             OF
         </div>
         <div class="contact3">
-            <form class="mailForm" action="" method="POST">
+            <form class="mailForm" action="" method="POST" autocomplete="off">
                 {% csrf_token %}
                 <div class="title">Stuur een bericht</div>
                 <div class="formBox">
-                    <input autocomplete="off" type="text" name="name" placeholder="Voornaam + achternaam" required>
-                    <input autocomplete="off" type="email" name="mail" placeholder="E-mail addres" required />
-                    <input autocomplete="off" type="text" name="subject" placeholder="Onderwerp" required>
+                    <input type="text" name="name" placeholder="Voornaam + achternaam" required>
+                    <input type="email" name="mail" placeholder="E-mail addres" required />
+                    <input type="text" name="subject" placeholder="Onderwerp" required>
                     <textarea name="message" placeholder="Neem hier contact met ons op"></textarea>
                 </div>
                 <button type="submit" name="submitMail">Verzend!</button>

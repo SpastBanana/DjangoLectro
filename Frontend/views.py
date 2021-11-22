@@ -142,7 +142,7 @@ def contactView(request):
         makeMailClient(mail)
         mailSuccess = {'page': 'mailSuccess.html', 'name': name, 'mail': mail, 'sub': sub, 'msg': msg,
                    'backPage': '/contact', 'copyYear': copyYear}
-        if request.method == 'POST' and 'submitMailFalse' in request.POST:
+        if request.method == 'POST' and 'invalidInfo' in request.POST:
             name = request.POST.get('name')
             mail = request.POST.get('mail')
             sub = 'INCORRECT FORM DATA'
@@ -156,6 +156,6 @@ def contactView(request):
 
 def solarView(request):
     data = {
-        'page': 'solarNews.html',
+        'page': 'solar.html',
     }
     return render(request, 'index.html', data)
