@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #own
     'Frontend',
+    'Sitemanager',
 ]
 
 MIDDLEWARE = [

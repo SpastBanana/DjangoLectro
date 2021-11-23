@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.core.mail import send_mail
 import datetime
+from .models import teamPerson
 
 def makeMailDataLectro(name, mail, sub, msg):
     data = {'name': name, 'mail': mail, 'sub': sub, 'msg': msg}
@@ -108,14 +109,15 @@ def teamView(request):
     # Footer
     x = datetime.datetime.now()
     copyYear = x.strftime("%Y")
-    data = {'page': 'team.html', 'copyYear': copyYear}
+    person = teamPerson.objects.all()
+    data = {'page': 'team.html', 'copyYear': copyYear, 'person': person}
 
     # Siteforms
     if request.method == 'POST' and 'submitPhone' in request.POST:
         name = request.POST.get('name')
         phone = request.POST.get('phone')
         makeMailPhone(name, phone)
-        success = {'page': 'phoneSuccess.html', 'backPage': '/het-team', 'copyYear': copyYear}
+        success = {'page': 'phoneSuccess.html', 'backPage': '/het-team', 'copyYear': copyYear, 'person': person}
         return render(request, 'index.html', success)
     else:
         return render(request, 'index.html', data)

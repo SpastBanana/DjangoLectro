@@ -1,0 +1,56 @@
+main {
+    height: auto;
+    width: 100%;
+}
+
+.banner {
+    height: 20vh;
+    width: 90%;
+    padding: 5%;
+    padding-top: 0;
+}
+
+.banner img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.banner h2 {
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,15%);
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    font-size: 200%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person {
+    height: 30vh;
+    width: 60%;
+    padding: 20%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personContent {
+    height: 100%;
+    width: 45%;
+    background: blue;
+}
+
+.personIMG {
+    height: 98%;
+    width: 23%;
+    border: solid 5px black;
+    background: purple;
+}

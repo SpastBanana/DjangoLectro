@@ -1,22 +1,41 @@
 {% load static %}
 <head>
-    <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/team.css' %}">
 </head>
 <main>
-    <div class="person">
-        <div class="personText">
-            <div class="personTitle">
-                <h2>Sebastiaan de Vries</h2>
-                <h3>Technical Engineer, Eigenaar DataLectro</h3>
-            </div>
-            <p>
-                Hoi, ik ben Sebastiaan en ik heb DataLectro opgericht. Dit heb ik gedaan,
-                omdat ik heel erg van techniek houd maar ook van management. Ik help graag
-                mensen en ik doe alles voor ons milieu!
-            </p>
-        </div>
-        <div class="personIMG">
-            <img src="">
-        </div>
+    <div class="banner">
+        <img src="{% static 'IMG/team/banner.JPG' %}">
+        <h2>Maak kennis met het team van DataLectro</h2>
+    </div>
+    <div class="content">
+        {% for Person in person %}
+            {% if Person.position == "left" %}
+                <div class="person">
+                    <div class="personContent">
+                        <div class="personTitle">
+                            <h2 class="name">{{ Person.name }}</h2>
+                            <h3 class="function">{{ Person.workFunction }}</h3>
+                        </div>
+                        <p class="personText">{{ Person.text }}</p>
+                    </div>
+                    <div class="personIMG">
+                        <img src="" alt="PersonIMG">
+                    </div>
+                </div>
+            {% elif Person.position == "right" %}
+                <div class="person">
+                    <div class="personIMG">
+                        <img src="" alt="PersonIMG">
+                    </div>
+                    <div class="personContent">
+                        <div class="personTitle">
+                            <h2 class="name">{{ Person.name }}</h2>
+                            <h3 class="function">{{ Person.workFunction }}</h3>
+                        </div>
+                        <p class="personText">{{ Person.text }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </main>

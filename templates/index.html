@@ -17,48 +17,12 @@
                 <h1 class="phoneHead">Neem contact op: 06-46772219</h1>
             </div>
             <div class="navList">
-                <a href="/"
-                   {% if request.get_full_path == "/" %}
-                        class="currentPage"
-                   {% else %}
-                        class="navLink"
-                   {% endif %}
-                >Home</a>
-                <a href="/over-datalectro"
-                   {% if request.get_full_path == "/over-datalectro/" %}
-                        class="currentPage"
-                   {% else %}
-                        class="navLink"
-                   {% endif %}
-                >Over DataLectro</a>
-                <a href="/portfolio"
-                   {% if request.get_full_path == "/portfolio/" %}
-                        class="currentPage"
-                   {% else %}
-                        class="navLink"
-                   {% endif %}
-                >Portfolio</a>
-                <a href="/blog"
-                   {% if request.get_full_path == "/blog/" %}
-                        class="currentPage"
-                   {% else %}
-                        class="navLink"
-                   {% endif %}
-                >Blog</a>
-                <a href="/het-team"
-                   {% if request.get_full_path == "/het-team/" %}
-                        class="currentPage"
-                   {% else %}
-                        class="navLink"
-                   {% endif %}
-                >Het team</a>
-                <a href="/contact"
-                   {% if request.get_full_path == "/contact/" %}
-                        class="currentPage"
-                   {% else %}
-                        class="navLink"
-                   {% endif %}
-                >Contact</a>
+                <a href="/" {% if request.get_full_path == "/" %} class="currentPage" {% else %} class="navLink" {% endif %} >Home</a>
+                <a href="/over-datalectro" {% if request.get_full_path == "/over-datalectro/" %} class="currentPage" {% else %} class="navLink" {% endif %} >Over DataLectro</a>
+                <a href="/portfolio" {% if request.get_full_path == "/portfolio/" %} class="currentPage" {% else %} class="navLink" {% endif %} >Portfolio</a>
+                <a href="/blog" {% if request.get_full_path == "/blog/" %} class="currentPage" {% else %} class="navLink" {% endif %} >Blog</a>
+                <a href="/het-team" {% if request.get_full_path == "/het-team/" %} class="currentPage" {% else %} class="navLink" {% endif %}>Het team</a>
+                <a href="/contact" {% if request.get_full_path == "/contact/" %} class="currentPage" {% else %} class="navLink" {% endif %} >Contact</a>
             </div>
         </div>
     </header>
