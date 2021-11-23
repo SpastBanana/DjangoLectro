@@ -74,7 +74,9 @@ header {
     text-decoration: none;
     font-size: 115%;
     font-weight: 400;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.5s ease;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .navLink:hover {
@@ -82,8 +84,6 @@ header {
     background: #d6a345;
     padding-right: 4px;
     padding-left: 4px;
-    /*border-bottom : solid 4px #d6a345;*/
-    /*border-top : solid 4px #d6a345;*/
 }
 
 .navLink {
@@ -96,7 +96,7 @@ header {
     text-decoration: none;
     font-size: 115%;
     font-weight: 400;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.5s ease;
     height: 40px;
     background: #3860A8;
     padding-right: 4px;
@@ -145,7 +145,7 @@ footer {
     font-size: 30px;
     height: 100%px;
     text-align: center;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .socialIcons a i {
