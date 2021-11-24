@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/CSS/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/CSS/team.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +96,9 @@
       <workItem from="1637733595526" duration="1114000" />
       <workItem from="1637735487171" duration="1087000" />
       <workItem from="1637737491499" duration="727000" />
+      <workItem from="1637738800261" duration="808000" />
+      <workItem from="1637748000330" duration="87000" />
+      <workItem from="1637766710190" duration="48000" />
     </task>
     <servers />
   </component>
