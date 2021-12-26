@@ -1,107 +1,61 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI";
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    margin-top: 2vh;
-    margin-bottom: 5vh;
-    height: 28vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 800px) {
+    header {
+        height: 180px;
+        position: relative;
+    }
+
+    .logo {
+        height: 174px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .bar {
+        height: 10px;
+        width: 100%;
+        background: #3860A8;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 0px 8px 20px 1px #888888;
+    }
+
+    .nav {
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        height: 20px;
+        width: 42%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav a {
+        padding: 10px;
+        border-bottom: solid 10px rgba(0, 0, 0, 0%);
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+        color: #d6a345;
+    }
+
+    .nav .current {
+        border-bottom: solid 10px #d6a345;
+    }
 }
 
-.header-PC {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.topTitle {
-    height: 20vh;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.logo {
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo img {
-    height: 100%;
-}
-
-.topTitle h1 {
-    font-weight: bold;
-    color: #d6a345;
-    padding: 5px;
-    border-bottom: solid 4px #3860A8;
-    font-size: 135% ;
-    font-weight: 500;
-}
-
-.navList {
-    height: 40px;
-    width: 100%;
-    background: #3860A8;
-    /*border-radius: 10px;*/
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-weight: bolder;
-}
-
-.currentPage {
-    margin-top: 4px;
-    height: 32px;
-    border-bottom : solid 4px #d6a345;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #eeeeee;
-    margin-right: -15%;
-    margin-left: -15%;
-    text-decoration: none;
-    font-size: 115%;
-    font-weight: 400;
-    transition: all 0.5s ease;
-    padding-right: 4px;
-    padding-left: 4px;
-}
-
-.navLink:hover {
-    height: 40px;
-    background: #d6a345;
-    padding-right: 4px;
-    padding-left: 4px;
-}
-
-.navLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #eeeeee;
-    margin-right: -15%;
-    margin-left: -15%;
-    text-decoration: none;
-    font-size: 115%;
-    font-weight: 400;
-    transition: all 0.5s ease;
-    height: 40px;
-    background: #3860A8;
-    padding-right: 4px;
-    padding-left: 4px;
-}
 
 footer {
     margin-top: 5vh;

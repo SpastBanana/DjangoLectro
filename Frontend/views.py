@@ -57,22 +57,6 @@ def homeView(request):
     else:
         return render(request, 'index.html', data)
 
-def overView(request):
-    # Footer
-    x = datetime.datetime.now()
-    copyYear = x.strftime("%Y")
-    data = {'page': 'over.html', 'copyYear': copyYear}
-
-    # Siteforms
-    if request.method == 'POST' and 'submitPhone' in request.POST:
-        name = request.POST.get('name')
-        phone = request.POST.get('phone')
-        makeMailPhone(name, phone)
-        success = {'page': 'phoneSuccess.html', 'backPage': '/over-datalectro', 'copyYear': copyYear}
-        return render(request, 'index.html', success)
-    else:
-        return render(request, 'index.html', data)
-
 def portfolioView(request):
     # Footer
     x = datetime.datetime.now()
@@ -85,22 +69,6 @@ def portfolioView(request):
         phone = request.POST.get('phone')
         makeMailPhone(name, phone)
         success = {'page': 'phoneSuccess.html', 'backPage': '/portfolio', 'copyYear': copyYear}
-        return render(request, 'index.html', success)
-    else:
-        return render(request, 'index.html', data)
-
-def blogView(request):
-    # Footer
-    x = datetime.datetime.now()
-    copyYear = x.strftime("%Y")
-    data = {'page': 'blog.html', 'copyYear': copyYear}
-
-    # Siteforms
-    if request.method == 'POST' and 'submitPhone' in request.POST:
-        name = request.POST.get('name')
-        phone = request.POST.get('phone')
-        makeMailPhone(name, phone)
-        success = {'page': 'phoneSuccess.html', 'backPage': '/blog', 'copyYear': copyYear}
         return render(request, 'index.html', success)
     else:
         return render(request, 'index.html', data)

@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86baa292-829e-4191-9590-949ad2f8ee80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +95,8 @@
       <workItem from="1637737491499" duration="727000" />
       <workItem from="1637738800261" duration="808000" />
       <workItem from="1637748000330" duration="87000" />
-      <workItem from="1637766710190" duration="48000" />
+      <workItem from="1637766710190" duration="1221000" />
+      <workItem from="1638348857766" duration="2457000" />
     </task>
     <servers />
   </component>
