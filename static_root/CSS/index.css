@@ -1,250 +1,249 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 800px) {
-    header {
-        height: 180px;
-        position: relative;
-    }
+  header {
+    height: 180px;
+    position: relative;
+  }
 
-    .logo {
-        height: 174px;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .logo {
+    height: 174px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .logo img {
-        height: 100px;
-    }
+  .logo img {
+    height: 100px;
+  }
 
-    .bar {
-        height: 10px;
-        width: 100%;
-        background: #3860A8;
-        position: absolute;
-        bottom: 0;
-        box-shadow: 0px 11px 20px 1px #999999;
-    }
+  .bar {
+    height: 10px;
+    width: 100%;
+    background: #3860a8;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px 11px 20px 1px #999999;
+  }
 
-    .nav {
-        position: absolute;
-        bottom: 15px;
-        right: 0;
-        height: 20px;
-        width: 42%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+  .nav {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    height: 20px;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
-    .nav a {
-        padding: 10px;
-        border-bottom: solid 10px rgba(0, 0, 0, 0%);
-        font-size: 14px;
-        font-weight: 900;
-        text-decoration: none;
-        color: #d6a345;
-    }
+  .nav a {
+    padding: 8px;
+    border-bottom: solid 10px rgba(0, 0, 0, 0%);
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #d6a345;
+  }
 
-    .nav .current {
-        border-bottom: solid 10px #d6a345;
-    }
+  .nav .current {
+    border-bottom: solid 10px #d6a345;
+  }
 }
 
-
 footer {
-    margin-top: 5vh;
-    height: 75vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  margin-top: 5vh;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footBox {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .footBar {
-    height: 75px;
-    width: 100%;
-    background: #3860A8;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: whitesmoke;
+  height: 75px;
+  width: 100%;
+  background: #3860a8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: whitesmoke;
 }
 
 .footBar h1 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .socialIcons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
 }
 
 .socialIcons a {
-    color: whitesmoke;
-    font-size: 30px;
-    height: 100%px;
-    text-align: center;
-    transition: all 0.5s ease;
+  color: whitesmoke;
+  font-size: 30px;
+  height: 100%px;
+  text-align: center;
+  transition: all 0.5s ease;
 }
 
 .socialIcons a i {
-    height: 40px;
-    width: 50px;
-    position: relative;
-    top: 3px;
-    text-align: center;
+  height: 40px;
+  width: 50px;
+  position: relative;
+  top: 3px;
+  text-align: center;
 }
 
 .socialIcons a:hover {
-    background: #d6a345;
-    box-shadow: 0px 0px 5px 0.3px #555555;
-    text-shadow: 0.8px 0.8px #555555;
+  background: #d6a345;
+  box-shadow: 0px 0px 5px 0.3px #555555;
+  text-shadow: 0.8px 0.8px #555555;
 }
 
 .workLogos img {
-    width: 6.5%;
-    box-shadow: 0px 0px 10px 0.2px #666666;
-    border-radius: 10px;
+  width: 6.5%;
+  box-shadow: 0px 0px 10px 0.2px #666666;
+  border-radius: 10px;
 }
 
 .workLogos {
-    height: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*background: purple;*/
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*background: purple;*/
 }
 
 .footContext {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 50%;
-    width: 100%;
-    /*background: blue;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+  width: 100%;
+  /*background: blue;*/
 }
 
 .card1,
 .card3 {
-    height: 100%;
-    width: 23%;
-    border-radius: 10px;
+  height: 100%;
+  width: 23%;
+  border-radius: 10px;
 }
 
 .card2 {
-    height: 100%;
-    width: 40%;
+  height: 100%;
+  width: 40%;
 }
 
 .card1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .copyRight {
-    text-align: center;
+  text-align: center;
 }
 
 .card1 img {
-    width: 150px;
-    margin-bottom: 20px;
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 .card1 h2 {
-    color: #3860A8;
-    font-size: 100%;
+  color: #3860a8;
+  font-size: 100%;
 }
 
 .card2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card2 form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .formFootTitle {
-    color: #3860A8;
-    font-size: 150%;
+  color: #3860a8;
+  font-size: 150%;
 }
 
 .formFootBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 45%;
 }
 
 .formFootBox input {
-    margin: 1%;
-    height: 20%;
-    width: 30%;
-    outline: none;
-    border: solid 1.2px black;
+  margin: 1%;
+  height: 20%;
+  width: 30%;
+  outline: none;
+  border: solid 1.2px black;
 }
 
 .card2 button {
-    height: 13%;
-    width: 30%;
-    border: none;
-    border-radius: 10px;
-    background: #6bc74a;
-    color: whitesmoke;
-    font-size: 100%;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 15px;
-    border-top-right-radius: 0px;
-    letter-spacing: 1px;
+  height: 13%;
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  background: #6bc74a;
+  color: whitesmoke;
+  font-size: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  letter-spacing: 1px;
 }
 
 .card3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card3 div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin-bottom: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.card3 div h1{
-    font-size: 120%;
-    color: #3860A8;
+.card3 div h1 {
+  font-size: 120%;
+  color: #3860a8;
 }
 
-.card3 div p{
-    font-size: 100%;
-    font-weight: 300;
+.card3 div p {
+  font-size: 100%;
+  font-weight: 300;
 }

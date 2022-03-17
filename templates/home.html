@@ -1,84 +1,97 @@
 {% load static %}
 <head>
-    <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/home.css' %}" />
 </head>
 <main>
-    <div class="flipCards">
-        <a href="/elektra" class="cardContain">
-            <div class="card">
-                <div class="cardFront">
-                    <img src="{% static 'IMG/home/Elektra.JPG' %}">
-                    <h2>Elektra</h2>
-                </div>
-                <div class="cardBack" href="/elektra">
-                    <h2>Elektra</h2>
-                    <p>
-                        Elektra is niet meer weg te denken! toch lastig
-                        als je het dan niet hebt of als het niet werkt...
-                        Bekijk hier wat DataLectro doet met elektra
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/engineering" class="cardContain">
-            <div class="card">
-                <div class="cardFront">
-                    <img src="{% static 'IMG/home/Domotica.JPG' %}">
-                    <h2>Engineering</h2>
-                </div>
-                <div class="cardBack">
-                    <h2>Engineering</h2>
-                    <p>
-                        Denken in problemen? Nee, wij denken in oplossingen!
-                        Bekijk hier wat DataLectro voor jou kan oplossen.
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/ICT-IOT" class="cardContain">
-            <div class="card">
-                <div class="cardFront">
-                    <img src="{% static 'IMG/home/ICT.JPG' %}">
-                    <h2>ICT & IOT</h2>
-                </div>
-                <div class="cardBack">
-                    <h2>ICT & IOT</h2>
-                    <p>
-                        "Mama, papa, het internet doet het niet..."
-                        Herkenbaar? Of andere vragen? Bekijk hier wat
-                        DataLectro allemaal kan op gebied van ICT en IOT
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/solar" class="cardContain">
-            <div class="card">
-                <div class="cardFront">
-                    <img src="{% static 'IMG/home/Solar-Card.jpg' %}">
-                    <h2>Solar</h2>
-                </div>
-                <div class="cardBack">
-                    <h2>Solar</h2>
-                    <p>
-                        Met solar denkt DataLectro graag aan het milieu! bekijk hier
-                        wat jij samen met DataLectro kan betekenen voor het milieu.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="solarText">
-        <div class="solarBlock">
-            <h1>NIEUW: DataLectro-Solar</h1>
-            <p>
-                Sinds 2022 is DataLectro begonnen met het plaatsen van zonnepanelen
-                bij particulieren. Dit alles wordt mogelijk gemaakt door een mooie nieuwe
-                samenwerking met <a href="https://liontech-solar.nl" target="_blank">Liontech-Solar</a>!
-                Hiermee hopen wij meer aandacht te krijgen voor het milieu. Samen kunnen
-                we Nederland groen maken en een goed voorbeeld geven aan de rest van de
-                Wereld!
-            </p>
-            <a href="/solar-project" class="leesMeerBTN">Lees hier meer</a>
+  <div class="flipCards">
+    <a href="/elektra" class="cardContain">
+      <div class="card">
+        <div class="cardFront">
+          <img src="{% static 'IMG/home/Elektra.JPG' %}" />
+          <h2>Elektra</h2>
         </div>
+        <div class="cardBack" href="/elektra">
+          <h2>Elektra</h2>
+          <p>
+            Elektra is niet meer weg te denken! toch lastig als je het dan niet
+            hebt of als het niet werkt... Bekijk hier wat DataLectro voor je kan
+            betekenen op elektra gebied
+          </p>
+        </div>
+      </div>
+    </a>
+    <a href="/engineering" class="cardContain">
+      <div class="card">
+        <div class="cardFront">
+          <img src="{% static 'IMG/home/Domotica.JPG' %}" />
+          <h2>Engineering</h2>
+        </div>
+        <div class="cardBack">
+          <h2>Engineering</h2>
+          <p>
+            Denken in problemen? Nee, wij denken in oplossingen! Bekijk hier wat
+            DataLectro voor jou kan oplossen
+          </p>
+        </div>
+      </div>
+    </a>
+    <a href="/ICT-IOT" class="cardContain">
+      <div class="card">
+        <div class="cardFront">
+          <img src="{% static 'IMG/home/ICT.JPG' %}" />
+          <h2>ICT & IOT</h2>
+        </div>
+        <div class="cardBack">
+          <h2>ICT & IOT</h2>
+          <p>
+            "Mama, papa, het internet doet het niet..." Herkenbaar? Of andere
+            vragen? Bekijk hier wat DataLectro allemaal kan op gebied van ICT en
+            IOT
+          </p>
+        </div>
+      </div>
+    </a>
+    <a href="/solar" class="cardContain">
+      <div class="card">
+        <div class="cardFront">
+          <img src="{% static 'IMG/home/Solar-Card.jpg' %}" />
+          <h2>Solar</h2>
+        </div>
+        <div class="cardBack">
+          <h2>Solar</h2>
+          <p>
+            Met solar denkt DataLectro graag aan het milieu! bekijk hier wat jij
+            samen met DataLectro kan betekenen voor het milieu.
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="Sebastiaan">
+    <div class="sebasText">
+      <div class="header">
+        <h1>Sebastiaan de Vries</h1>
+        <h2>Elektriciën & Mechatronica Engineer</h2>
+      </div>
+      <p class="main">
+        Hallo, mijn naam is Sebastiaan de Vries en ik ben de oprichter van
+        DataLectro.
+        <br />
+        <br />
+
+        DataLectro is door mij opgericht omdat ik een enorme passie heb voor
+        techniek. Naast mijn passie voor techniek help ik ook graag de mensen om
+        mij heen. Dit is dan ook de reden dat DataLectro voornamelijk voor
+        particulieren is. Mijn hobby's op technisch gebied zijn programmeren in
+        verschillende soorten programmeertalen en met elektronica knutsellen.
+        Dit verschilt dan van werken aan wat nieuwe domotica of bijvoorbeeld een
+        alarm sensor maken voor mijn slaapkamer deur. Het meeste hiervan vind je
+        dan ook terug in mijn bedrijf en werk ik nu uit tot professionele
+        systemen om bij mensen thuis te installeren.
+      </p>
     </div>
+    <div class="sebasImg">
+      <img src="{% static 'IMG/home/sebastiaan.jpg' %}" alt="" />
+    </div>
+  </div>
 </main>

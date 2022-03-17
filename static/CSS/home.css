@@ -1,155 +1,141 @@
 /* Desktop */
 @media (min-width: 800px) {
-    main {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-    }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 
-    .flipCards {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 15vh;
-        margin-bottom: 15vh;
-    }
+  .flipCards {
+    height: calc(100vh - 180px);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .cardContain {
-        width: 16vw;
-        height: 22vw;
-        perspective: 1000px;
-    }
+  .cardContain {
+    width: 16vw;
+    height: 22vw;
+    perspective: 1000px;
+  }
 
-    .card {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
 
-    .cardContain:hover .card {
-        transform: rotateY(180deg);
-    }
+  .cardContain:hover .card {
+    transform: rotateY(180deg);
+  }
 
-    .cardFront img {
-        height: 100%;
-        width: 100%;
-    }
+  .cardFront img {
+    height: 100%;
+    width: 100%;
+  }
 
-    .cardFront h2 {
-        position: absolute;
-        background: rgba(0,0,0,15%);
-        height: 100%;
-        width: 100%;
-        font-size: 160%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .cardFront h2 {
+    position: absolute;
+    background: rgba(0, 0, 0, 15%);
+    height: 100%;
+    width: 100%;
+    font-size: 160%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .cardFront {
-        background: #333;
-        font-size: 150%;
-        font-weight: 700;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        color: whitesmoke;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 120%;
-    }
+  .cardFront {
+    background: #333;
+    font-size: 150%;
+    font-weight: 700;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+  }
 
-    .cardBack {
-        background: #3860A8;
-        transform: rotateY(180deg);
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        color: whitesmoke;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        font-size: 125%;
-        text-align: left;
-    }
+  .cardBack {
+    background: #3860a8;
+    transform: rotateY(180deg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 125%;
+    text-align: left;
+  }
 
-    .cardBack h2 {
-        text-align: left;
-    }
+  .cardBack h2 {
+    text-align: left;
+  }
 
-    .cardBack p {
-        margin: 5%;
-        text-align: left;
-        font-size: 90%;
-    }
+  .cardBack p {
+    margin: 5%;
+    text-align: left;
+    font-size: 90%;
+  }
 
-    .textBox {
-        height: auto;
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .Sebastiaan {
+    width: 90%;
+    height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
-    .solarText {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20vw;
-        width: 84%;
-        padding: 3%;
-        border: solid 2px #d6a345;
-        text-align: justify;
-        margin-top: 15vh;
-        margin-bottom: 15vh;
-    }
+  .sebasText {
+    height: 70%;
+    width: 45%;
+    border: solid 5px #3860a8;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
-    .solarText h1 {
-        font-size: 150%;
-        font-weight: bolder;
-        color: #3860A8;
-    }
+  .sebasText .header {
+    margin: 5%;
+  }
 
-    .solarText p {
-        font-size: 100%;
-        font-weight: 500;
-        width: 80%;
-    }
+  .sebasText h1 {
+    font-size: 220%;
+    color: #3860a8;
+  }
 
-    .solarBlock {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
+  .sebasText h2 {
+    font-size: 140%;
+    color: #d6a345;
+  }
 
-    .leesMeerBTN {
-        height: 15%;
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 110%;
-        font-weight: 600;
-        text-decoration: none;
-        cursor: pointer;
-        background: #3860A8;
-        border-radius: 5px;
-    }
+  .sebasText .main {
+    margin: 5%;
+    font-size: 1.1vw;
+  }
+
+  .sebasImg {
+    height: calc(70% + 10px);
+  }
+
+  .sebasImg img {
+    height: 100%;
+  }
 }
 
 /* Phone */
 @media (max-width: 800px) {
-
 }
