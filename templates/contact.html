@@ -1,37 +1,46 @@
 {% load static %}
 <head>
-    <link rel="stylesheet" href="{% static 'CSS/contact.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/contact.css' %}" />
 </head>
 <main>
-    <div class="contactBox">
-        <div class="contact1">
-            <div class="title">Neem persoonlijk contact op</div>
-            <div class="context">
-                <div>
-                    <h3>Mail</h3>
-                    <p>info@datalectro.nl</p>
-                </div>
-                <div>
-                    <h3>Telefoon & Whatsapp</h3>
-                    <p>06-46772219</p>
-                </div>
-            </div>
+  <div class="contact">
+    <div class="text">
+      <h1>Contact</h1>
+      <p>
+        Heb je vragen of ben je nieuwsgierig naar de werkzaamheden die
+        DataLectro jou kan bieden? Ik sta je graag te woord en help je verder.
+        Je kan hiervoor persoonlijk contact opnemen of onderstaand formulier
+        invullen.
+      </p>
+      <div class="info">
+        <div class="phone">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <p>06 - 46772219</p>
         </div>
-        <div class="contact2">
-            OF
+        <div class="mail">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <p>info@datalectro.nl</p>
         </div>
-        <div class="contact3">
-            <form class="mailForm" action="" method="POST" autocomplete="off">
-                {% csrf_token %}
-                <div class="title">Stuur een bericht</div>
-                <div class="formBox">
-                    <input type="text" name="name" placeholder="Voornaam + achternaam" required>
-                    <input type="email" name="mail" placeholder="E-mail addres" required />
-                    <input type="text" name="subject" placeholder="Onderwerp" required>
-                    <textarea name="message" placeholder="Neem hier contact met ons op"></textarea>
-                </div>
-                <button type="submit" name="submitMail">Verzend!</button>
-            </form>
-        </div>
+      </div>
     </div>
+    <div class="img">
+      <img src="{% static 'IMG/home/sebastiaan.jpg' %}" alt="" />
+    </div>
+  </div>
+  <form class="mailForm" action="" method="POST" autocomplete="off">
+    {% csrf_token %}
+    <input
+      type="text"
+      name="name"
+      placeholder="Voornaam + achternaam"
+      required
+    />
+    <input type="email" name="mail" placeholder="E-mail addres" required />
+    <input type="text" name="subject" placeholder="Onderwerp" required />
+    <textarea
+      name="message"
+      placeholder="Neem hier contact met ons op"
+    ></textarea>
+    <button type="submit" name="submitMail">Verzend</button>
+  </form>
 </main>

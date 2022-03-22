@@ -17,7 +17,7 @@
             <div class="nav">
                 <a {% if request.get_full_path == '/' %} class="current" {% endif %} href="/">Home</a>
                 <a {% if request.get_full_path == '/portfolio' %} class="current" {% endif %} href="/portfolio">Portfolio</a>
-                <a {% if request.get_full_path == '/overDataLectro' %} class="current" {% endif %} href="/overDataLectro">Over DataLectro</a>
+                <a {% if request.get_full_path == '/over-DataLectro' %} class="current" {% endif %} href="/over-DataLectro">Over DataLectro</a>
                 <a {% if request.get_full_path == '/contact' %} class="current" {% endif %} href="/contact">Contact</a>
             </div>
         </div>
@@ -53,23 +53,8 @@
             <div class="footContext">
                 <div class="card1">
                     <img src="{% static "IMG/index/logoNew.png" %}">
-                    <div class="copyRight">
-                        <h2>&copy; 2019-{{ copyYear }}</h2>
-                        <a href="https://datalectro.nl">www.datalectro.nl</a>
-                    </div>
                 </div>
                 <div class="card2">
-                    <form class="contact-form" action="" method="POST">
-                        {% csrf_token %}
-                        <h2 class="formFootTitle">Bel mij terug</h2>
-                        <div class="formFootBox">
-                            <input autocomplete="off" type="text" name="name" placeholder="Naam" required>
-                            <input autocomplete="off" type="text" name="phone" placeholder="Uw telefoon nummer" required />
-                        </div>
-                        <button type="submit" name="submitPhone">Verzend!</button>
-                    </form>
-                </div>
-                <div class="card3">
                     <div class="con1">
                         <h1>E-mail</h1>
                         <p>info@datalectro.nl</p>
@@ -79,10 +64,27 @@
                         <p>06-46772219</p>
                     </div>
                     <div class="con3">
+                        <h1>Sponsor</h1>
+                        <a href="https://www.sponsorkliks.com/products/shops.php?club=12256&cn=nl&ln=nl">sponsor DataLectro</a>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="con3">
                         <h1>KVK</h1>
                         <p>85590363</p>
                     </div>
+                    <div class="con4">
+                        <h1>&copy; 2019-{{ copyYear }}</h1>
+                        <a href="https://datalectro.nl">www.datalectro.nl</a>
+                    </div>
                 </div>
+                <form class="card4" action="" method="POST">
+                    {% csrf_token %}
+                    <h2 class="formFootTitle">Bel mij terug</h2>
+                    <input autocomplete="off" type="text" name="name" placeholder="Naam" required>
+                    <input autocomplete="off" type="text" name="phone" placeholder="Uw telefoon nummer" required />
+                    <button type="submit" name="submitPhone">Verzend</button>
+                </form>
             </div>
         </div>
     </footer>

@@ -138,4 +138,125 @@
 
 /* Phone */
 @media (max-width: 800px) {
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .flipCards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardContain {
+    height: 75vw;
+    width: 100%;
+    perspective: 1000px;
+    margin: 50px 0 0 0;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .cardFront img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cardFront h2 {
+    display: none;
+  }
+
+  .cardFront {
+    font-size: 150%;
+    font-weight: 700;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    color: whitesmoke;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+  }
+
+  .cardBack {
+    background: #3860a8;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 125%;
+    text-align: left;
+    right: 0;
+  }
+
+  .cardBack h2 {
+    text-align: left;
+  }
+
+  .cardBack p {
+    margin: 5%;
+    text-align: left;
+    font-size: 90%;
+  }
+
+  .Sebastiaan {
+    width: 90%;
+    height: calc(75vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .sebasText {
+    height: 64%;
+    width: calc(55% - 10px);
+    border: solid 5px #3860a8;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .sebasText .header {
+    margin: 2.5% 2.5% 0 2.5%;
+  }
+
+  .sebasText h1 {
+    font-size: 4vw;
+    color: #3860a8;
+  }
+
+  .sebasText h2 {
+    font-size: 2.2vw;
+    color: #d6a345;
+  }
+
+  .sebasText .main {
+    margin: 0 2.5% 2.5% 2.5%;
+    font-size: 2.2vw;
+  }
+
+  .sebasImg {
+    width: 45%;
+    height: calc(64% + 10px);
+  }
+
+  .sebasImg img {
+    width: 100%;
+    height: 100%;
+  }
 }

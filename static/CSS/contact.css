@@ -1,118 +1,175 @@
-main {
-    height: 75vh;
+/* Desktop */
+@media (min-width: 800px) {
+  main {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    flex-direction: column;
+  }
 
-.contactBox {
+  .contact {
+    margin-top: 80px;
+    height: calc(60vh - 180px);
+    width: calc(50% + 10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text {
     height: 100%;
-    width: 90%;
+    width: 55%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.contact1 {
-    width: 28%;
-    height: 80%;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
-    border: solid 2px #d6a345;
-}
+  }
 
-.title {
-    font-size: 180%;
-    font-weight: bolder;
-    color: #3860A8;
-    text-align: center;
-}
+  .text h1 {
+    font-size: 250%;
+    color: #3860a8;
+  }
 
-.context {
-    height: 50%;
+  .text p {
+    font-size: 150%;
+  }
+
+  .info i {
+    font-size: 165%;
+    margin-right: 12px;
+    color: #3860a8;
+  }
+
+  .info div {
+    display: flex;
+  }
+
+  .img img {
+    height: calc(60vh - 180px);
+  }
+
+  .mailForm {
+    width: 50%;
+    margin-top: 80px;
+    margin-right: 10px;
+  }
+
+  .mailForm input,
+  .mailForm button {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    text-align: center;
-}
-
-.context h3 {
-    font-size: 130%;
-    font-weight: 500;
-    color: #3860A8;
-}
-
-.context p {
-    font-size: 110%;
-}
-
-.contact2 {
-    font-size: 300%;
-    font-weight: bolder;
-    color: #3860A8;
-}
-
-.contact3 {
-    width: 28%;
-    height: 80%;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 2px #d6a345;
-}
-
-.mailForm {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.formBox {
-    height: 66%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.formBox input {
-    height: 10%;
-    width: 80%;
+    height: 40px;
     outline: none;
-    margin-bottom: 2%;
+    font-size: 100%;
     padding: 5px;
-    font-weight: 700;
-    border: solid 1.5px #444444;
-}
+    margin-bottom: 20px;
+  }
 
-.formBox textarea {
-    height: 50%;
-    width: 80%;
+  .mailForm button {
+    width: calc(100% + 10px);
+    height: 60px;
+    border: none;
+    color: whitesmoke;
+    background: #6bc74a;
+    border-radius: 1.5vh;
+    border-top-right-radius: 0;
+    font-size: 140%;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .mailForm textarea {
+    width: 100%;
+    height: 150px;
     outline: none;
+    font-size: 100%;
     padding: 5px;
     resize: none;
-    font-weight: 700;
-    border: solid 1.5px #444444;
+    margin-bottom: 20px;
+  }
 }
 
-.mailForm button {
-    height: 12%;
-    width: 50%;
+/* Phone */
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact {
+    margin-top: 80px;
+    height: calc(60vh - 180px);
+    width: 90%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .text {
+    height: 100%;
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .text h1 {
+    font-size: 220%;
+    color: #3860a8;
+  }
+
+  .text p {
+    font-size: 100%;
+  }
+
+  .info i {
+    font-size: 150%;
+    margin-right: 12px;
+    color: #3860a8;
+  }
+
+  .info div {
+    display: flex;
+  }
+
+  .img img {
+    height: calc(50vh - 180px);
+  }
+
+  .mailForm {
+    width: 90%;
+    margin-top: 80px;
+    margin-right: 10px;
+  }
+
+  .mailForm input,
+  .mailForm button {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-size: 90%;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  .mailForm button {
+    width: calc(100% + 10px);
+    height: 60px;
     border: none;
-    border-radius: 25px;
-    border-top-right-radius: 0px;
-    background: #6bc74a;
-    cursor: pointer;
     color: whitesmoke;
-    font-weight: 600;
+    background: #6bc74a;
+    border-radius: 1.5vh;
+    border-top-right-radius: 0;
+    font-size: 110%;
     letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .mailForm textarea {
+    width: 100%;
+    height: 150px;
+    outline: none;
+    font-size: 90%;
+    padding: 5px;
+    resize: none;
+    margin-bottom: 20px;
+  }
 }
