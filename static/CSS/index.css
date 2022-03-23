@@ -4,7 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   header {
     height: 180px;
     position: relative;
@@ -186,8 +186,7 @@
   }
 }
 
-/* Phone */
-@media (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   header {
     height: 200px;
     position: relative;
