@@ -198,24 +198,24 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    font-size: 125%;
     text-align: left;
     right: 0;
   }
 
   .cardBack h2 {
     text-align: left;
+    font-size: 250%;
   }
 
   .cardBack p {
     margin: 5%;
     text-align: left;
-    font-size: 90%;
+    font-size: 180%;
   }
 
   .Sebastiaan {
     width: 90%;
-    height: calc(75vh - 180px);
+    height: calc(65vh - 350px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
