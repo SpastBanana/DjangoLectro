@@ -8,9 +8,12 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+sys.path.append('/root/DjangoLectro')
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'DjangoLectro.settings'
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DjangoLectro.settings")
 
 application = get_wsgi_application()
